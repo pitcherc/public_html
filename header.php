@@ -11,7 +11,13 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 <head>
     <meta charset="UTF-8">
-    <title>League Of Legends</title>
+    <title>Legends de League</title>
 </head>
 <body>
 <div class="shell">
+    <div class="header">
+
+    </div>
+    <div class="nav">
+
+    </div>

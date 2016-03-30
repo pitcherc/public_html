@@ -6,7 +6,9 @@
  * Time: 2:22 PM
  */
 ?>
+    <div class="footer">
 
+    </div>
 
 </div>
 </body>
