@@ -1,5 +1,10 @@
-.body {
-    background: #000066;
+@font-face {
+font-family: Calaboose;
+src: url("css/fonts/calabooseDEMO.otf") format("opentype");
+}
+
+body {
+    background: #333333;
 }
 .shell {
     max-width: 1200px;
@@ -7,24 +12,23 @@
 }
 .header {
     height: 400px;
-    background-image: url("images/LOL_logo.png");
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
 }
 .nav {
-    width: 100%;
-    height: 40px;
-    background: #0000b2;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background: #000080;
+    font-family: Calaboose;
 }
 .content {
     height: 1000px;
-    background: #FFFFFF;
+    background: #BBBBBB;
 }
 .footer {
-    width: 100%;
-    height: 400px;
-    background: #0000b2;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    background: #000080;
 }

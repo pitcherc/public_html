@@ -16,7 +16,7 @@
 <body>
 <div class="shell">
     <div class="header">
-
+	<img src="images/LOL_logo.png" />
     </div>
     <div class="nav">
 
