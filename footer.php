@@ -6,10 +6,11 @@
  * Time: 2:22 PM
  */
 ?>
-    <div class="footer">
+    <div class="full-width">
+        <div class="footer">
 
+        </div>
     </div>
-
 </div>
 </body>
 </html>

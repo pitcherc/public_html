@@ -5,6 +5,7 @@ src: url("css/fonts/calabooseDEMO.otf") format("opentype");
 
 body {
     background: #333333;
+    margin: 0;
 }
 .shell {
     max-width: 1200px;
@@ -13,22 +14,194 @@ body {
 .header {
     height: 400px;
 }
-.nav {
+.full-width {
     position: absolute;
     left: 0;
     width: 100vw;
+    background: #000044;
+    z-index: 9999;
+}
+.nav-inner {
     height: 60px;
-    background: #000080;
+    margin: 0 auto;
+    width: 1200px;
     font-family: Calaboose;
 }
+.dropdown {
+    display: none;
+}
+.dropdown a {
+    width: 100%;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+#nav .dropdown-content.show {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #000044;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+#nav {
+    z-index: 9999;
+    height: 40px;
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav li {
+    float: left;
+}
+#nav li a {
+    display: inline-block;
+    color: #EEEEEE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 32px;
+}
+#nav li a:hover {
+    background-color: #000066;
+}
+#nav li ul {
+    display: none;
+}
+#nav li:hover {
+    background: #000066;
+}
+#nav ul {
+    z-index: 9999;
+}
+#nav li:hover ul {
+    width: 126px;
+    position: absolute;
+    display: block;
+    background: #000066;
+}
+#nav li:hover ul li {
+    width: 126px;
+}
+#nav li:hover ul li:hover a, #nav li:hover ul li:hover {
+    background: #000044;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
 .content {
-    height: 1000px;
-    background: #BBBBBB;
+    min-height: 800px;
+    background: #CCCCCC;
+    overflow: hidden;
+}
+.content h1 {
+    font-family: Calaboose;
+    margin-left: 10px;
+}
+.content-shell {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+.clr {
+    clear: both;
+}
+
+/********** Champions **********/
+.champ {
+    position: relative;
+    float:left;
+    margin: 10px;
+}
+.champ .name {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+}
+
+/********** Form **********/
+form {
+    padding-left:40px;
+}
+form input {
+    height: 40px;
+    width: 35%;
+    font-size: 20px;
+    border: none;
+    margin: 5px 5px 5px 0;
+    padding-left: 10px;
+}
+input[type="submit"] {
+    width: 36.3%;
+    background: #000044;
+    color: #eeeeee;
+    font-family: Impact;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+input[type="submit"]:hover {
+    background: #000066;
+    cursor: pointer;
+}
+hr {
+    margin: 20px 0;
 }
 .footer {
-    position: absolute;
-    left: 0;
-    width: 100vw;
+    width: 1200px;
     height: 200px;
-    background: #000080;
+}
+
+/********** Media Queries **********/
+@media only screen and (max-width: 1200px) {
+    .nav-inner {width: 100%;}
+    .header {
+        margin-bottom: -4px;
+        height: auto;
+    }
+    .header img {width: 100%;}
+}
+@media only screen and (max-width: 650px) {
+    #nav ul {
+        float: left;
+        width: 100%;
+    }
+    #nav ul li {
+        width: 100%;
+    }
+    #nav li:hover ul {
+        display: none;
+    }
+    .full-nav {
+        display: none;
+    }
+    .dropdown {
+        display: block;
+    }
 }
